@@ -32,14 +32,14 @@ model2.compile(optimizer='rmsprop',
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-data2 = np.array([[0,0],
-                 [0,1],
-                 [1,1],
-                 [1,0],
-                 [100,100],
-                 [99,99],
-                 [99,100],
-                 [100,98]
+data2 = np.array([[0, 0],
+                 [0, 1],
+                 [1, 1],
+                 [1, 0],
+                 [100, 100],
+                 [99, 99],
+                 [99, 100],
+                 [100, 98]
                  ])
 #
 labels2 = np.array([[0], [0], [0], [0], [1], [1], [1], [1]])
@@ -54,3 +54,19 @@ for number in result_tmp:
     result.append(int(number))
 
 print(result)
+print(result_tmp)
+
+string = "www.qq.com"
+
+from domain import count
+print(count.dots(string))
+print(count.numbers(string))
+print(count.symbol(string))
+print(count.vowels(string))
+
+import requests
+import urllib3
+urllib3.disable_warnings()
+url = 'https://api.devopsclub.cn/api/whoisquery?type=json&domain='
+response = requests.get(url + string, verify=False)
+print(response.text)
