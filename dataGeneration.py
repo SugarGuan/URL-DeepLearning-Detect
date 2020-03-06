@@ -58,4 +58,7 @@ print(tensors)
 print('-----------------------------------------------------------------')
 print(tensor_format(tensors))
 
+
+import model
+
 # print(np.array([tensor1, tensor2]))

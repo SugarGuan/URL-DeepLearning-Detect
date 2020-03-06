@@ -56,17 +56,17 @@ for number in result_tmp:
 print(result)
 print(result_tmp)
 
-string = "www.qq.com"
+# string = "www.qq.com"
+#
+# from domain import count
+# print(count.dots(string))
+# print(count.numbers(string))
+# print(count.symbol(string))
+# print(count.vowels(string))
 
-from domain import count
-print(count.dots(string))
-print(count.numbers(string))
-print(count.symbol(string))
-print(count.vowels(string))
-
-import requests
-import urllib3
-urllib3.disable_warnings()
-url = 'https://api.devopsclub.cn/api/whoisquery?type=json&domain='
-response = requests.get(url + string, verify=False)
-print(response.text)
+# import requests
+# import urllib3
+# urllib3.disable_warnings()
+# url = 'https://api.devopsclub.cn/api/whoisquery?type=json&domain='
+# response = requests.get(url + string, verify=False)
+# print(response.text)
