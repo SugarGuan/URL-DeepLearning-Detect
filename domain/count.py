@@ -14,5 +14,5 @@ def vowels(url):
 
 def symbol(url):
     return url.count('+') + url.count('%') + url.count('=') + \
-           url.count('%') + url.count('&') + url.count('#') + url.count('?')
+           url.count('&') + url.count('#') + url.count('?')
 
